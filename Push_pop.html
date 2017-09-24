@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creating array and applying some methods</title>   	<!-- title on the page -->
+</head>
+<body>
+	<p> Creating an array with name arr[]</p>  
+	<script type="text/javascript">		/* script tag containing javascript logic */
+
+	var linebreak = "<br />";	
+	var arr = [3,4,5,6,76,7,8];			/* Defining array */
+
+	var n = arr.push(10,11,12,13);			/* Push method is used to insert new elements in the array */
+	document.write("New array after inserting elements =  " +arr);
+	document.write(linebreak);
+
+	var x = arr.pop();				/* pop is used to take out the inserted elements one by one */
+	document.write(arr);
+	document.write(linebreak);
+
+	var x = arr.pop();
+	document.write(arr);
+	document.write(linebreak);
+
+	var x = arr.pop();
+	document.write(arr);
+	document.write(linebreak);
+
+	var x = arr.pop();
+	document.write("New Array after pop out of the inserted elements  = " + arr);
+	document.write(linebreak);
+	
+	var index_arr = arr.slice(0,4);			/* slice method is used to select the index or to cut the array */
+	document.write("Taking First index to fourth index = " + index_arr);
+	document.write(linebreak);
+	arr.forEach(function(iterate){
+		document.write(linebreak);
+		document.write(iterate);			/* displaying in seperate line the array elements */
+	});
+
+	</script>
+
+</body>
+</html>
